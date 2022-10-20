@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'header header header header header header'
+    'main main main main main main'
+    'form1 form1 form1 form2 form2 form2';
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.header{
+    grid-area: header;
+    background-color: rgb(10, 35, 63);
+}
+
+.nav{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.nav img{
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav h1{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main {
+    background-color: whitesmoke;
+}
+
+.main {grid-area: main;}
+.form1 {grid-area: form1;}
+.form2 {grid-area: form2;}
+
+.grid-container > div {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
